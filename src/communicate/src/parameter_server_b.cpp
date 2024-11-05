@@ -30,7 +30,7 @@ int main(int argc, char *argv[]) {
            nh_string_value.c_str(), nh_bool_value);
 
   for (auto &stu : stus) {
-    ROS_INFO("stus 元素: % s", stu.c_str());
+    ROS_INFO("stus 元素: %s", stu.c_str());
   }
 
   for (auto &f : friends) {
