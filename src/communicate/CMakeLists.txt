@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
   message_generation
+  geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -267,5 +268,40 @@ add_executable(parameter_server_b
   src/parameter_server_b.cpp
 )
 target_link_libraries(parameter_server_b
+  ${catkin_LIBRARIES}
+)
+
+add_executable(parameter_server_c
+  src/parameter_server_c.cpp
+)
+target_link_libraries(parameter_server_c
+  ${catkin_LIBRARIES}
+)
+
+add_executable(turtlesim_pub
+  src/turtlesim_pub.cpp
+)
+target_link_libraries(turtlesim_pub
+  ${catkin_LIBRARIES}
+)
+
+add_executable(turtlesim_sub
+  src/turtlesim_sub.cpp
+)
+target_link_libraries(turtlesim_sub
+  ${catkin_LIBRARIES}
+)
+
+add_executable(turtlesim_srv
+  src/turtlesim_srv.cpp
+)
+target_link_libraries(turtlesim_srv
+  ${catkin_LIBRARIES}
+)
+
+add_executable(turtlesim_param
+  src/turtlesim_param.cpp
+)
+target_link_libraries(turtlesim_param
   ${catkin_LIBRARIES}
 )
