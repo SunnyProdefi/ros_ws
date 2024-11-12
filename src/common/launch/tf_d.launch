@@ -1,0 +1,7 @@
+<launch>
+  <node name="turtlesim_node" pkg="turtlesim" type="turtlesim_node" output="screen"/>
+  <node name="turtle_teleop_key" pkg="turtlesim" type="turtle_teleop_key" output="screen" launch-prefix="xterm -e" />
+  <node name="tf_pub_d" pkg="common" type="tf_pub_d" output="screen"/>
+  <node name="tf_sub_d" pkg="common" type="tf_sub_d" output="screen"/>
+  <node name="rviz" pkg="rviz" type="rviz" output="screen"/>
+</launch>
