@@ -1,0 +1,3 @@
+[submodule "src/arbotix_ros"]
+	path = src/arbotix_ros
+	url = https://github.com/vanadiumlabs/arbotix_ros.git
