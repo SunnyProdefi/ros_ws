@@ -25,7 +25,7 @@
             <rosDebugLevel>Debug</rosDebugLevel>
             <publishWheelTF>true</publishWheelTF>
             <robotNamespace>/</robotNamespace>
-            <publishTf>1</publishTf>
+            <publishTf>true</publishTf>
             <publishWheelJointState>true</publishWheelJointState>
             <alwaysOn>true</alwaysOn>
             <updateRate>100.0</updateRate>
@@ -34,7 +34,7 @@
             <rightJoint>base_r_wheel_joint</rightJoint> <!-- 右轮 -->
             <wheelSeparation>${base_link_radius * 2}</wheelSeparation> <!-- 车轮间距 -->
             <wheelDiameter>${wheel_radius * 2}</wheelDiameter> <!-- 车轮直径 -->
-            <broadcastTF>1</broadcastTF>
+            <broadcastTF>false</broadcastTF>
             <wheelTorque>30</wheelTorque>
             <wheelAcceleration>1.8</wheelAcceleration>
             <commandTopic>cmd_vel</commandTopic> <!-- 运动控制话题 -->
